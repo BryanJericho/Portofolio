@@ -11,10 +11,28 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+/* Add this to your CSS */
 .typing-effect {
   overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
   white-space: nowrap;
-  animation: typing 2s steps(40, end) infinite;
+  animation: typing 3s steps(30, end) infinite;
+}
+
+.typing-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.typing-effect::after {
+  content: "";
+  display: inline-block;
+  width: 0;
+  height: 2px;
+  background-color: #000; /* You can change the color as needed */
+  margin-left: 5px; /* Adjust the spacing between text and line */
+  animation: blink-line 1s infinite;
 }
 
 @keyframes typing {
@@ -23,6 +41,18 @@ body {
   }
   to {
     width: 100%;
+  }
+}
+
+@keyframes blink-line {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 
