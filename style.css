@@ -17,7 +17,7 @@ body {
   display: inline-block;
   vertical-align: bottom;
   white-space: nowrap;
-  animation: typing 3s steps(30, end) infinite;
+  animation: typing 3s steps(30) infinite;
 }
 
 .typing-effect {
@@ -32,7 +32,7 @@ body {
   height: 2px;
   background-color: #000; /* You can change the color as needed */
   margin-left: 5px; /* Adjust the spacing between text and line */
-  animation: blink-line 1s infinite;
+  animation: blink-line 3s infinite;
 }
 
 @keyframes typing {
@@ -474,4 +474,24 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Dark mode styles */
+.dark-mode {
+  background-color: #333; /* Dark background color */
+  color: #ffc107; /* Yellow font color */
+}
+
+.dark-mode a {
+  color: #bbb; /* Light link color */
+}
+
+/* Add more dark mode styles as needed */
+#desktop-nav {
+  background-color: #fff; /* Latar belakang putih untuk navbar */
+  color: #000; /* Warna teks hitam untuk navbar */
+}
+
+#desktop-nav a {
+  color: #000; /* Warna teks hitam untuk tautan navigasi */
 }
