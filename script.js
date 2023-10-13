@@ -30,10 +30,20 @@ function toggleDarkMode() {
   } else {
     // Jika dark mode dinonaktifkan, kembalikan warna latar belakang dan teks seperti semula
     desktopNav.style.backgroundColor = "#fff";
-    desktopNav.style.color = "#333";
+    desktopNav.style.color = "#fff";
     const navLinks = desktopNav.querySelectorAll("a");
     for (let link of navLinks) {
-      link.style.color = "#333";
+      link.style.color = "#fff";
     }
   }
 }
+
+window.addEventListener("load", function () {
+  const preloader = document.querySelector(".preloader");
+  const content = document.querySelector("body");
+
+  setTimeout(function () {
+    preloader.style.display = "none"; // Hide the preloader after 3 seconds
+    content.style.overflow = "visible"; // Show the content
+  }, 2000); // Change 3000 to the desired duration in milliseconds
+});
