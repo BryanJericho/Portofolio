@@ -45,5 +45,5 @@ window.addEventListener("load", function () {
   setTimeout(function () {
     preloader.style.display = "none"; // Hide the preloader after 3 seconds
     content.style.overflow = "visible"; // Show the content
-  }, 2000); // Change 3000 to the desired duration in milliseconds
+  }, 900); // Change 3000 to the desired duration in milliseconds
 });
