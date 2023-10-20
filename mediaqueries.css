@@ -101,3 +101,11 @@
     text-align: justify;
   }
 }
+
+@media (max-width: 768px) {
+  /* Styles untuk dark mode di perangkat seluler */
+  body {
+    background-color: #333;
+    color: #ffc107;
+  }
+}

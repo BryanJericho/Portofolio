@@ -11,7 +11,6 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
-/* Add this to your CSS */
 .typing-effect {
   overflow: hidden;
   display: inline-block;
@@ -486,6 +485,21 @@ footer p {
 
 .dark-mode a {
   color: #ffc107; /* Light link color */
+}
+
+.dark-mode p {
+  color: #ffc107;
+}
+
+.dark-mode .btn-color-1 {
+  color: #ffc107;
+}
+
+.dark-mode .btn-color-2 {
+  color: #ffc107;
+}
+.dark-mode .details-container {
+  color: #ffc107;
 }
 
 /* Add more dark mode styles as needed */
