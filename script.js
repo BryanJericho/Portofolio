@@ -31,6 +31,7 @@ function toggleDarkMode() {
     // Jika dark mode dinonaktifkan, kembalikan warna latar belakang dan teks seperti semula
     desktopNav.style.backgroundColor = "#fff";
     desktopNav.style.color = "#fff";
+    desktopNav.style.text = "#000";
     const navLinks = desktopNav.querySelectorAll("a");
     for (let link of navLinks) {
       link.style.color = "#fff";
@@ -46,4 +47,13 @@ window.addEventListener("load", function () {
     preloader.style.display = "none"; // Hide the preloader after 3 seconds
     content.style.overflow = "visible"; // Show the content
   }, 900); // Change 3000 to the desired duration in milliseconds
+});
+
+const parallaxSections = document.querySelectorAll(".parallax-section");
+
+window.addEventListener("scroll", () => {
+  parallaxSections.forEach((section) => {
+    const offset = window.scrollY;
+    section.style.backgroundPositionY = -offset * 0.5 + "px"; // Adjust the factor to control the parallax speed
+  });
 });
